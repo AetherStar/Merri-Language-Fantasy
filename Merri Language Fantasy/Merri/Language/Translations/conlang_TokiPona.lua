@@ -22,11 +22,11 @@ function SetupEnglish()
     target[ "game title" ]              = "musi pi toki pona"                    -- Translate as "Fantasy of ____" for your language. (e.g., Fantazio de Esperanto)
     
     -- DEMO TEXT (Temporary)
-    target[ "Thank you for trying out Merri" ]                  = ""
-    target[ "This is still a work in progress" ]                = ""
-    target[ "There may be errors or bugs" ]                     = ""
-    target[ "Report problems at EMAIL" ]                        = ""
-    target[ "Want to keep up with this game's progress?" ]      = ""
+    target[ "Thank you for trying out Merri" ]                  = "sina musi e musi pi toki pona la sina pona"
+    target[ "This is still a work in progress" ]                = "musi ni li pini ala"
+    target[ "There may be errors or bugs" ]                     = "ken la pakala li lon"
+    target[ "Report problems at EMAIL" ]                        = "ijo li pakala la o toki e ni kepeken "
+    target[ "Want to keep up with this game's progress?" ]      = "musi ni li ante la sina wile ala wile sona e ni?"
     
     -- Ignore this block
     helper[ "Thank you for trying out Merri" ] = target[ "Thank you for trying out Merri" ]
@@ -38,14 +38,14 @@ function SetupEnglish()
         
     -- MAIN MENU BUTTONS
     target[ "play" ]                    = "musi"                    -- Button to begin the game
-    target[ "previous" ]                = ""                    -- Go backward one page (one menu)
-    target[ "next" ]                    = ""                    -- Go forward one page (one menu)
+    target[ "previous" ]                = "tawa lipu pini"                    -- Go backward one page (one menu)
+    target[ "next" ]                    = "tawa lipu kama"                    -- Go forward one page (one menu)
     target[ "options" ]                 = "ante e ijo"                    -- Configure options in a game
     target[ "help" ]                    = "kama sona e ijo"                    -- Get help / instructions for a game or function
-    target[ "menu" ]                    = "tawa lipu lawa"                    -- Open up sub-menu screen
-    target[ "close-menu" ]              = "tawa lipu pini"                    -- Close sub-menu
+    target[ "menu" ]                    = "open e lipu lawa"                    -- Open up sub-menu screen
+    target[ "close-menu" ]              = "pini e lipu lawa"                    -- Close sub-menu
     target[ "back" ] = target[ "close-menu" ]                   -- Ignore this
-    target[ "progress" ]                = ""                    -- Progress / Statistics menu
+    target[ "progress" ]                = "nanpa pali"                    -- Progress / Statistics menu
     helper[ "progress" ] = target[ "progress" ]
     
     -- Difficulty levels
@@ -69,7 +69,7 @@ function SetupEnglish()
     -- MINER MINI-GAME TEXT --
     --------------------------
     -- Stats
-    target[ "Miner" ]                   = "tawa lon lupa anpa"                    -- Male miner (temporary)
+    target[ "Miner" ]                   = "jan pali"                    -- Male miner (temporary)
     target[ "Floor" ]                   = "nanpa anpa:"                    -- How many floors down you have traveled in the mine
     target[ "Money" ]                   = "mani:"                    -- The amount of (generic) money you've earned
     target[ "Health" ]                  = "sijelo:"                    -- Amount of hits you have before you die
@@ -84,7 +84,7 @@ function SetupEnglish()
     target[ "mole" ]                    = "soweli lupa"
     target[ "mushroom" ]                = "kili"
     target[ "bat" ]                     = "soweli waso"
-    target[ "rabbit" ]                  = "soweli suwi"
+    target[ "rabbit" ]                  = "soweli walo"
     target[ "snake" ]                   = "akesi linja"
     target[ "skeleton" ]                = "jan moli tawa"
     target[ "moose" ]                   = "soweli suli"
@@ -98,27 +98,27 @@ function SetupEnglish()
     target[ "diamond" ]                 = "kiwen walo"
     target[ "emerald" ]                 = "kiwen laso jelo"
     target[ "ruby" ]                    = "kiwen loje"
-    target[ "copper" ]                  = "kiwen loje jelo"                    -- It is a copper coin
+    target[ "copper" ]                  = "mani"                    -- It is a copper coin
     target[ "silver" ]                  = "kiwen mun"
     target[ "gold" ]                    = "kiwen suno"
     target[ "ladder" ]                  = "ilo tawa"                    -- Ladder to climb down one floor
     
     -- Shopkeeper Dialogue
     target[ "Do you want to buy a tool?" ]    = "sina wile ala wile esun tawa ilo?"
-    target[ "You don't have enough money" ]   = ""
+    target[ "You don't have enough money" ]   = "sina jo ala e mani pi mute pona"
     
     -- Button options
-    target[ "Don't buy anything" ]      = ""                    -- Click to leave the store, nobody is saying this line it is a button.
+    target[ "Don't buy anything" ]      = "esun ala"                    -- Click to leave the store, nobody is saying this line it is a button.
     target[ "Price" ]                   = "mani esun:"                    -- Price label
     
     -- Item names and descriptions
     target[ "Potion" ]                  = "telo wawa"                    -- Restores health
     target[ "PotionDescription" ]       = "ijo ni li pona e sijelo sina."
-    target[ "Earthquake" ]              = "tawa wawa e ma"
-    target[ "EarthquakeDescription" ]   = "ijo ni loi pakala e kiwen ale."
+    target[ "Earthquake" ]              = "ijo pi tawa ma"
+    target[ "EarthquakeDescription" ]   = "ijo ni li pakala e kiwen ale."
     target[ "Dynamite" ]                = "ilo wawa seli"
     target[ "DynamiteDescription" ]     = "ijo ni li kama e ni: nanpa anpa li anpa wan."
-    target[ "Rope" ]                    = "linja"
+    target[ "Rope" ]                    = "linja tawa"
     target[ "RopeDescription" ]         = "ijo ni li kama e ni: nanpa anpa li sewi wan."
     target[ "Blizzard" ]                = "lete wawa"
     target[ "BlizzardDescription" ]     = "ijo ni li pini e tawa pi soweli ike ale."
@@ -131,10 +131,10 @@ function SetupEnglish()
     target[ "miner-move-west" ]         = "sina tawa poka."
     target[ "miner-mine" ]              = "sina tawa e ilo sina."
     target[ "miner-eat-sandwich" ]      = "sina moku e moku tan lupa."
-    target[ "use-earthquake" ]          = ""
-    target[ "use-blizzard" ]            = ""
-    target[ "enemies-thaw" ]            = ""
-    target[ "use-potion" ]              = ""
+    target[ "use-earthquake" ]          = "sina kepeken e ilo pi tawa ma."
+    target[ "use-blizzard" ]            = "sina pana e lete wawa."
+    target[ "enemies-thaw" ]            = "soweli ike li lete ala."
+    target[ "use-potion" ]              = "sina moku e telo wawa."
     target[ "miner-collect-copper" ]    = "sina kama jo e kiwen loje jelo."
     target[ "miner-collect-silver" ]    = "sina kama jo e kiwen mun."
     target[ "miner-collect-gold" ]      = "sina kama jo e kiwen suno."
@@ -152,8 +152,8 @@ function SetupEnglish()
     target[ "miner-attack-moose" ]      = "sina pakala e soweli suli."
     target[ "miner-attack-skeleton" ]   = "sina pakala e jan moli tawa."
     target[ "miner-go-down-ladder" ]    = "sina tawa anpa kepeken ilo tawa."
-    target[ "miner-rope" ]              = ""
-    target[ "miner-dynamite" ]          = ""
-    target[ "miner-died" ]              = ""
+    target[ "miner-rope" ]              = "sina kepeken e linja tawa."
+    target[ "miner-dynamite" ]          = "sina kepeken e ilo wawa seli."
+    target[ "miner-died" ]              = "sina moli."
     
 end
